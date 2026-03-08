@@ -117,7 +117,7 @@ export default function Recipes() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
 
                     {/* List of recipes */}
-                    <div className={`lg:col-span-${selectedRecipe ? '4' : '12'} space-y-4`}>
+                    <div className={`${selectedRecipe ? 'lg:col-span-4' : 'lg:col-span-12'} space-y-4`}>
                         <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">
                             Found {recipes.length} ideas with "{ingredient}"
                         </h2>
