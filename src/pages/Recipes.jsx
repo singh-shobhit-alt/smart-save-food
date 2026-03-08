@@ -158,7 +158,7 @@ export default function Recipes() {
                     {/* Recipe Details Panel */}
                     {selectedRecipe && (
                         <div className="lg:col-span-8 animate-fade-in">
-                            <div className="glass-card overflow-hidden sticky top-24">
+                            <div className="glass-card overflow-hidden">
                                 {detailsLoading ? (
                                     <div className="flex flex-col items-center justify-center p-20 text-gray-500">
                                         <Loader2 className="w-12 h-12 animate-spin mb-4 text-earth-500" />
