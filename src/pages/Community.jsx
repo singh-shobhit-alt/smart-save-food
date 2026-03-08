@@ -4,32 +4,28 @@ import { MessageSquare, Heart, Share2, Quote } from 'lucide-react';
 const DEFAULT_PLEDGES = [
     {
         id: '1',
-        name: 'Sarah J.',
-        avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&h=150&q=80',
+        name: 'Anjali',
         pledge: 'I pledge to always check my fridge before going to the grocery store.',
         date: '2026-03-01T10:00:00Z',
         likes: 12
     },
     {
         id: '2',
-        name: 'Michael T.',
-        avatar: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&w=150&h=150&q=80',
+        name: 'Roshni',
         pledge: 'I pledge to start a small compost bin on my balcony this week!',
         date: '2026-02-28T14:30:00Z',
         likes: 8
     },
     {
         id: '3',
-        name: 'Elena R.',
-        avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&h=150&q=80',
+        name: 'Satakshi',
         pledge: 'I pledge to freeze my vegetable scraps and use them to make homemade broth.',
         date: '2026-02-25T09:15:00Z',
         likes: 24
     },
     {
         id: '4',
-        name: 'David W.',
-        avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80',
+        name: 'Shobhit',
         pledge: 'I pledge to eat all my leftovers for lunch instead of buying out.',
         date: '2026-02-20T16:45:00Z',
         likes: 15
