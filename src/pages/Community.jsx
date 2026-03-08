@@ -37,12 +37,12 @@ export default function Community() {
     const [formData, setFormData] = useState({ name: '', pledge: '' });
 
     useEffect(() => {
-        const saved = localStorage.getItem('smartSavePledges');
+        const saved = localStorage.getItem('smartSavePledges_v2');
         if (saved) {
             setPledges(JSON.parse(saved));
         } else {
             setPledges(DEFAULT_PLEDGES);
-            localStorage.setItem('smartSavePledges', JSON.stringify(DEFAULT_PLEDGES));
+            localStorage.setItem('smartSavePledges_v2', JSON.stringify(DEFAULT_PLEDGES));
         }
     }, []);
 
@@ -60,7 +60,7 @@ export default function Community() {
 
         const updatedPledges = [newPledge, ...pledges];
         setPledges(updatedPledges);
-        localStorage.setItem('smartSavePledges', JSON.stringify(updatedPledges));
+        localStorage.setItem('smartSavePledges_v2', JSON.stringify(updatedPledges));
         setFormData({ name: '', pledge: '' });
     };
 
@@ -69,7 +69,7 @@ export default function Community() {
             p.id === id ? { ...p, likes: p.likes + 1 } : p
         );
         setPledges(updatedPledges);
-        localStorage.setItem('smartSavePledges', JSON.stringify(updatedPledges));
+        localStorage.setItem('smartSavePledges_v2', JSON.stringify(updatedPledges));
     };
 
     const timeAgo = (dateString) => {
