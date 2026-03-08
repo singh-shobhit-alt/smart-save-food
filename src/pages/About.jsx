@@ -90,7 +90,7 @@ export default function About() {
                                     <div>
                                         <h4 className="font-semibold text-gray-900 dark:text-white">Email Us</h4>
                                         <p className="text-gray-500 dark:text-gray-400 text-sm">Our team usually responds within 24 hours.</p>
-                                        <a href="mailto:hello@smartsave.example.com" className="text-earth-600 dark:text-earth-400 hover:underline mt-1 inline-block">hello@smartsave.example.com</a>
+                                        <a href="mailto:hello@smartsave.example.com" className="text-earth-600 dark:text-earth-400 hover:underline mt-1 inline-block">satakshikumari237@gmail.com</a>
                                     </div>
                                 </div>
 
@@ -101,7 +101,7 @@ export default function About() {
                                     <div>
                                         <h4 className="font-semibold text-gray-900 dark:text-white">Visit Us</h4>
                                         <p className="text-gray-500 dark:text-gray-400 text-sm">Come say hello at our headquarters.</p>
-                                        <span className="text-gray-700 dark:text-gray-300 mt-1 inline-block">123 Eco-Valley Road, Green City, 90210</span>
+                                        <span className="text-gray-700 dark:text-gray-300 mt-1 inline-block">Gargi college university of delhi</span>
                                     </div>
                                 </div>
 
@@ -112,7 +112,7 @@ export default function About() {
                                     <div>
                                         <h4 className="font-semibold text-gray-900 dark:text-white">Call Us</h4>
                                         <p className="text-gray-500 dark:text-gray-400 text-sm">Mon-Fri from 9am to 6pm.</p>
-                                        <a href="tel:+15551234567" className="text-earth-600 dark:text-earth-400 hover:underline mt-1 inline-block">+1 (555) 123-4567</a>
+                                        <a href="tel:+15551234567" className="text-earth-600 dark:text-earth-400 hover:underline mt-1 inline-block">+91 8088220906</a>
                                     </div>
                                 </div>
                             </div>
