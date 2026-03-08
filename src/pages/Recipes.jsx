@@ -20,7 +20,8 @@ export default function Recipes() {
         setSelectedRecipe(null);
 
         try {
-            const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${ingredient}`);
+            const encodedIngredient = encodeURIComponent(ingredient.trim());
+            const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${encodedIngredient}`);
             const data = await response.json();
 
             if (data.meals) {
@@ -125,7 +126,11 @@ export default function Recipes() {
                             {recipes.map((recipe) => (
                                 <div
                                     key={recipe.idMeal}
-                                    onClick={() => getRecipeDetails(recipe.idMeal)}
+                                    onClick={() => {
+                                        getRecipeDetails(recipe.idMeal);
+                                        // Scroll to top of page to see details if on mobile
+                                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                                    }}
                                     className={`glass-card overflow-hidden cursor-pointer group transition-all duration-300 hover:shadow-xl hover:-translate-y-1 border-2 ${selectedRecipe === recipe.idMeal ? 'border-earth-500 dark:border-earth-400' : 'border-transparent'}`}
                                 >
                                     <div className="relative h-48 overflow-hidden">
